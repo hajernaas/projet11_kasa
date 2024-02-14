@@ -1,0 +1,102 @@
+header {
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+
+    @media screen and (min-width: 1025px) {
+        padding: 0 30px;
+    }
+
+    .header-logo {
+        width: 145px;
+        height: 45px;
+
+        @media screen and (min-width: 1025px) {
+            width: 210px;
+            height: 68px;
+        }
+
+    }
+
+    nav {
+        ul {
+            //display: flex;
+            font-size: 13px;
+            text-transform: uppercase;
+
+            @media screen and (min-width: 370px) {
+
+                display: flex;
+            }
+
+            @media screen and (min-width: 1025px) {
+                text-transform: none;
+            }
+
+            li {
+                margin: 5px 0 0 15px;
+
+                @media screen and (min-width: 370px) {
+                    margin: 0 0 0 15px;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin-left: 50px;
+                    font-size: $f3-font-size;
+                    font-weight: $medium-font-weight;
+                }
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/*
+@media screen and (min-width: 370px) {
+    header nav ul {
+        display: flex;
+
+        li {
+            margin: 0 0 0 15px;
+        }
+    }
+}
+
+*/
+/*
+@media screen and (min-width: 1025px) {
+    header {
+        padding: 0 30px;
+
+        nav {
+            ul {
+                text-transform: none;
+
+                li {
+                    margin-left: 50px;
+                    font-size: $f3-font-size;
+                    font-weight: $medium-font-weight;
+                }
+            }
+        }
+    }
+
+    .header-logo {
+        width: 210px;
+        height: 68px;
+
+    }
+
+}*/
