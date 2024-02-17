@@ -1,7 +1,6 @@
 // _utils.scss
 @import "./utils/variables";
-
-
+@import "./utils/mixins";
 
 // _base.scss
 @import "./base/typography";
@@ -9,3 +8,10 @@
 // _components.scss
 @import "./components/header";
 @import "./components/footer";
+@import "./components/banner";
+@import "./components/appartmentList";
+@import "./components/appartmentCard";
+@import "./components/collapse";
+
+//_pages.scss
+@import "./pages/about";

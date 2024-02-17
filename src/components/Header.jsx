@@ -1,17 +1,22 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/LOGO.svg";
 
 function Header() {
 	return (
 		<header>
-			<img src={logo} alt="logo Kasa" className="header-logo" />
+			<img
+				src={logo}
+				alt="logo  Kasa - agence de location d'appartements"
+				className="header-logo"
+			/>
+
 			<nav>
 				<ul>
 					<li>
-						<Link to="/">Accueil</Link>
+						<NavLink to="/">Accueil</NavLink>
 					</li>
 					<li>
-						<Link to="/about">A propos</Link>
+						<NavLink to="/about">A Propos</NavLink>
 					</li>
 				</ul>
 			</nav>

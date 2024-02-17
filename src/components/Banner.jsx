@@ -1,13 +1,22 @@
 import React from "react";
-
-function Banner({ image, text }) {
+import PropTypes from "prop-types";
+function Banner({ classBanner }) {
 	return (
-		<div className="banner">
-			<img className="banner__img" src={image} alt="Bannière" />
-			<div className="banner__darken"></div>
-			<span className="banner__text">{text}</span>
+		<div className={`banner ${classBanner} `}>
+			<h1>
+				Chez vous,
+				<br className="banner__text" /> partout et ailleurs
+			</h1>
 		</div>
 	);
 }
+
+Banner.propTypes = {
+	classBanner: PropTypes.string,
+};
+
+Banner.defaultProps = {
+	classBanner: "",
+};
 
 export default Banner;
