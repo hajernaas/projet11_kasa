@@ -23,7 +23,7 @@
         }
     }
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         margin: 20px auto 22px;
     }
 
@@ -38,7 +38,7 @@
             text-align: center;
         }
 
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             font-size: $f1-font-size;
             font-weight: $bold-font-weight;
         }
@@ -47,42 +47,9 @@
     &.bannerAbout {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url("../../assets/BannerApropos.png");
-        //height: 210px;
-        // height: 111px;
 
         h1 {
             display: none;
         }
     }
 }
-
-/*
-@media screen and (min-width: 600px) {
-    .banner {
-         margin: 60px auto 40px;
-        height: 210px;
-
-        &__text {
-            display: none;
-        }
-
-        h1 {
-            width: 100%;
-            font-size: 30px;
-            text-align: center;
-        }
-    }
-}
-*/
-/*
-@media screen and (min-width: 1025px) {
-    .banner {
-     
-
-        h1 {
-            font-size: $f1-font-size;
-            font-weight: $bold-font-weight;
-
-        }
-    }
-}*/

@@ -12,13 +12,13 @@ function About() {
 			id: "2",
 			title: "Respect",
 			description:
-				"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme..",
+				"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
 		},
 		{
 			id: "3",
 			title: "Service",
 			description:
-				"Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question..",
+				"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
 		},
 		{
 			id: "4",
@@ -36,11 +36,7 @@ function About() {
 					{dataAbout.map((data) => {
 						return (
 							<div key={data.id} className="about__collapse">
-								<Collapse
-									// style={{ margin: "30px 0" }}
-									title={data.title}
-									text={data.description}
-								/>
+								<Collapse title={data.title} text={data.description} />
 							</div>
 						);
 					})}
@@ -51,15 +47,3 @@ function About() {
 }
 
 export default About;
-
-/*
-{
-
-	aboutDatas.map((data) => {
-		return (
-			<div key={data.id} className="about_main_collapse">
-				<Collapse style={{ margin: "30px 0" }} title={data.title} content={data.content} />
-			</div>
-		);
-	});
-}*/
