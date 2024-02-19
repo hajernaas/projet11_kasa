@@ -1,7 +1,6 @@
 import arrow from "../assets/arrow_back_down.svg";
 import { useState } from "react";
 import PropTypes from "prop-types";
-//import { FaAngleDown } from "react-icons/fa";
 
 function Collapse({ title, text }) {
 	const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,7 @@ function Collapse({ title, text }) {
 		<div className="collapse">
 			<div className="collapse__title" onClick={handleExpand}>
 				<h2>{title}</h2>
-				<img src={arrow} alt="chevron up down" className={isOpen ? "rotate-arrow" : ""} />
+				{<img src={arrow} alt="chevron up down" className={isOpen ? "rotate-arrow" : ""} />}
 			</div>
 			<div className={`collapse__text ${isOpen ? "visible" : ""}`}>{displayText()}</div>
 		</div>
