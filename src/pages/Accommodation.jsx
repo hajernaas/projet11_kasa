@@ -1,19 +1,20 @@
 import React from "react";
 import Data from "../data/Data.json";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 
 function Accommodation() {
 	const { id } = useParams();
-	const searchAppartment = Data.find((appart) => appart.id === id);
+	const selectedAppartment = Data.find((appart) => appart.id === id);
 
-	//let { pictures } = logementSelected;
+	if (selectedAppartment === undefined) {
+		return <Navigate to="/error" />;
+	}
 
 	return (
 		<main>
 			<section>
-				{/* {<Slideshow {...logementSelected} />} */}
-				{<Slideshow pictures={searchAppartment.pictures} />}
+				{<Slideshow pictures={selectedAppartment.pictures} />}
 
 				<p>page accommodation</p>
 			</section>
