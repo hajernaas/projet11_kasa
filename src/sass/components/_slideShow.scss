@@ -1,0 +1,62 @@
+.carousel {
+    height: 255px;
+    position: relative;
+    //  overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 600px) {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        height: 415px;
+        border-radius: 25px;
+    }
+
+
+    &__arrow {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        &--left {
+            left: 3%;
+        }
+
+        &--right {
+            right: 3%;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 30px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 45px;
+            height: 79px;
+        }
+    }
+
+    &__count {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-secondary;
+    }
+
+    p {
+
+        font-size: $f4-font-size;
+        font-weight: $medium-font-weight;
+        //display: none;
+    }
+}
