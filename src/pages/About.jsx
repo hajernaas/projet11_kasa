@@ -31,6 +31,7 @@ function About() {
 	return (
 		<main>
 			<section>
+				{/* définir le nom du classe via les props */}
 				<Banner classBanner="bannerAbout" />
 				<div className="about">
 					{dataAbout.map((data) => {

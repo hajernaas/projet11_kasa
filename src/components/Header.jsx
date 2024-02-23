@@ -4,11 +4,7 @@ import logo from "../assets/LOGO.svg";
 function Header() {
 	return (
 		<header>
-			<img
-				src={logo}
-				alt="logo  Kasa - agence de location d'appartements"
-				className="header-logo"
-			/>
+			<img src={logo} alt="Logo  Kasa " className="header-logo" />
 
 			<nav>
 				<ul>

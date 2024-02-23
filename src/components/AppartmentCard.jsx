@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+//  Utilisation des props id , Title,cover , pour générer une carte d'appartement depuis le composant AppartmentList
 function AppartmentCard({ id, title, cover }) {
 	return (
 		<div id={id} className="card">

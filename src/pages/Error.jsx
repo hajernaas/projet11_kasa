@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+//cette page est renvoyée pour chaque route inexistante
 function Error() {
 	return (
 		<main>

@@ -1,0 +1,10 @@
+.accommodation-collapse {
+    margin-bottom: 27px;
+
+    @media screen and (min-width:1024px) {
+        display: flex;
+        gap: 76px;
+
+    }
+
+}

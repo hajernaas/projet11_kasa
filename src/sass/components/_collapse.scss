@@ -5,7 +5,7 @@
     border-radius: 5px;
 
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 30px;
     }
 
@@ -20,7 +20,7 @@
         color: $color-secondary ;
         cursor: pointer;
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 768px) {
             height: 40px;
             padding: 10px 12px;
         }
@@ -45,7 +45,7 @@
                 transform: rotate(180deg);
             }
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: 768px) {
                 width: 20px;
             }
         }
@@ -54,7 +54,7 @@
             font-size: $f6-font-size ;
             font-weight: $bold-font-weight;
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: 768px) {
                 font-size: $f4-font-size;
             }
 
@@ -91,6 +91,7 @@
         font-weight: $regular-font-weight;
         color: $color-tertiary;
         text-align: justify;
+        height: 200px;
 
 
 
@@ -106,7 +107,7 @@
 
             margin: 13px 20px 20px 20px;
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: 768px) {
                 margin-top: 25px;
             }
 
@@ -127,7 +128,7 @@
             line-height: 142.6%
         }
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 768px) {
             min-height: 0;
 
             font-size: $f4-font-size;

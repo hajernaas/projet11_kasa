@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 function Banner({ classBanner }) {
 	return (
+		// Passer une prop : classBanner (une chaine )comme argument et définir le text pour la bannière
 		<div className={`banner ${classBanner} `}>
 			<h1>
 				Chez vous,

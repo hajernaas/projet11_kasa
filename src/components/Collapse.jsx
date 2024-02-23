@@ -1,14 +1,15 @@
-import arrow from "../assets/arrow_back_down.svg";
+import arrow from "../assets/chevron-up.svg";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
 function Collapse({ title, text }) {
 	const [isOpen, setIsOpen] = useState(false);
 
+	//Array.isArray(text) : Vérifie si la prop text est un tableau  dont le contenu text est ensuite affiché sous forme d'une liste à puces (ul) dans la page de détails de l'appartement.
+	// sinon le text est affiché sous forme d'une chaine de caractéres dans la page A propos
 	function displayText() {
 		if (Array.isArray(text)) {
 			const equipments = text.map((elt) => <li key={`${elt}`}>{elt}</li>);
-
 			return <ul> {equipments} </ul>;
 		}
 		return <p>{text}</p>;

@@ -5,10 +5,14 @@ import PropTypes from "prop-types";
 
 function Slideshow({ pictures }) {
 	const [indexPicture, setIndexPicture] = useState(0);
-
+	//vérifier si l'image actuelle est la dernière
+	//si l'image était la dernière afficher la 1ère sinon la suivante
 	function nextSlide() {
 		setIndexPicture(indexPicture === pictures.length - 1 ? 0 : indexPicture + 1);
 	}
+
+	//vérifier si l'image actuelle est la 1ère,
+	//si l'image était la 1ère afficher la dernière sinon la précédente
 	function prevSlide() {
 		setIndexPicture(indexPicture === 0 ? pictures.length - 1 : indexPicture - 1);
 	}
@@ -31,7 +35,7 @@ function Slideshow({ pictures }) {
 					/>
 					<div className="carousel__count">
 						<p>
-							{indexPicture + 1}/{pictures.length}{" "}
+							{indexPicture + 1}/{pictures.length}
 						</p>
 					</div>
 				</div>
