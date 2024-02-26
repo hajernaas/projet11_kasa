@@ -91,7 +91,7 @@
         font-weight: $regular-font-weight;
         color: $color-tertiary;
         text-align: justify;
-        height: 200px;
+        //height: 130px;
 
 
 
@@ -129,8 +129,15 @@
         }
 
         @media screen and (min-width: 768px) {
-            min-height: 0;
+            //  min-height: 0;
 
+            font-size: $f4-font-size;
+        }
+
+        @media screen and (min-width: 1024px) {
+            // min-height: 0;
+
+            height: 200px;
             font-size: $f4-font-size;
         }
 

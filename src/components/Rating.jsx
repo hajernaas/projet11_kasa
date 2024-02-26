@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import starRed from "../assets/star-active.svg";
-import StarGray from "../assets/star-inactive.svg";
+import starRed from "../assets/start_active.png";
+import StarGray from "../assets/star_inactive.png";
 
 function Rating({ rating }) {
 	const ratingValueMax = 5;

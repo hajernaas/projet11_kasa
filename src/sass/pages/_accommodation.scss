@@ -8,3 +8,175 @@
     }
 
 }
+
+.accommodation-details {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        h2 {
+            //margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: $f4-font-size;
+            font-weight: $medium-font-weight;
+
+            @media screen and (min-width: 768px) {
+                font-size: $f3-font-size;
+                margin-bottom: 32px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: $f2-font-size;
+            }
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: $f5-font-size;
+            font-weight: $medium-font-weight;
+            color: $color-tertiary;
+
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 20px;
+                font-size: $f4-font-size;
+            }
+        }
+
+        &--tags {
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &--tag {
+            padding: 2px 2px;
+            width: 84px;
+            height: 18px;
+            text-align: center;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 10px;
+
+            @media screen and (min-width: 768px) {
+                padding: 4px 4px;
+                height: 22px;
+                width: 95px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                // padding: 5px 10px 0;
+                height: 25px;
+                min-width: 115px;
+            }
+
+
+            p {
+                font-size: $f8-font-size;
+                font-weight: $bold-font-weight;
+
+                @media screen and (min-width: 768px) {
+                    font-size: $f7-font-size;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    font-size: $f5-font-size;
+                }
+            }
+
+
+
+        }
+    }
+
+
+    &__profil {
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            height: 120px;
+            margin-left: 60px;
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            align-items: flex-end;
+            min-width: 201px;
+            height: 130px;
+        }
+
+        &--host {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (min-width: 1024px) {
+                display: flex;
+                align-items: center;
+            }
+
+
+            &-name {
+                //margin: 2px 11px 0 0;
+
+                p {
+                    font-size: $f7-font-size;
+                    font-weight: $medium-font-weight;
+
+                    @media screen and (min-width: 768px) {
+                        font-size: 18px;
+                    }
+
+
+                }
+
+                @media screen and (min-width: 768px) {
+                    margin-top: 0;
+                }
+
+            }
+
+            &-picture {
+                width: 32px;
+                height: 32px;
+                overflow: hidden;
+                border-radius: 50%;
+
+                @media screen and (min-width: 768px) {
+                    width: 64px;
+                    height: 64px;
+                }
+
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+
+}
