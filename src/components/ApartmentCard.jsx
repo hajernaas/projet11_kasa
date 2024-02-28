@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-//  Utilisation des props id , Title,cover , pour générer une carte d'appartement depuis le composant AppartmentList
-function AppartmentCard({ id, title, cover }) {
+// Utilisation des props id , Title,cover , pour générer une carte d'appartement depuis le composant AppartmentList
+function ApartmentCard({ id, title, cover }) {
 	return (
 		<div id={id} className="card">
 			<img className="card__image" src={cover} alt={title} />
@@ -11,9 +11,9 @@ function AppartmentCard({ id, title, cover }) {
 	);
 }
 
-AppartmentCard.propTypes = {
+ApartmentCard.propTypes = {
 	id: PropTypes.string,
 	title: PropTypes.string,
 	cover: PropTypes.string,
 };
-export default AppartmentCard;
+export default ApartmentCard;

@@ -1,15 +1,14 @@
 import Banner from "../components/Banner";
-import AppartmentList from "../components/AppartmentList";
+import ApartmentList from "../components/ApartmentList";
 
 /*  c'est la page d'accueil d'une application d'hébergement*/
-/* Affichage du composant bannière et composant liste des cartes   */
-
+/* Affichage du composant bannière et composant liste des appartements   */
 function Home() {
 	return (
 		<main>
 			<section>
 				<Banner />
-				<AppartmentList />
+				<ApartmentList />
 			</section>
 		</main>
 	);

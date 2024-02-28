@@ -51,12 +51,21 @@
         left: 50%;
         transform: translateX(-50%);
         color: $color-secondary;
-    }
 
-    p {
+        p {
 
-        font-size: $f4-font-size;
-        font-weight: $medium-font-weight;
-        //display: none;
+            //font-size: $f4-font-size;
+            //font-weight: $medium-font-weight;
+            // display: none;
+            visibility: hidden;
+
+            @media screen and (min-width: 1024px) {
+                font-size: $f4-font-size;
+                font-weight: $medium-font-weight;
+                //  display: inline;
+                visibility: visible
+            }
+
+        }
     }
 }
