@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ApartmentCard from "./ApartmentCard";
 import Data from "../data/Data.json";
 
-//Définir des props key , title et cover et de les passer à AppartmentCard
+//Définir des props key , title et cover et de les passer à ApartmentCard
 function ApartmentList() {
 	return (
 		<div className="appartments">
