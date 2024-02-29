@@ -31,7 +31,6 @@ function Accommodation() {
 						))}
 					</div>
 				</div>
-
 				<div className="accommodation-details__profil">
 					<Rating rating={selectedAppartment.rating} />
 					<div className="accommodation-details__profil--host">

@@ -20,7 +20,7 @@ function Slideshow({ pictures }) {
 	return (
 		<div className="carousel" style={{ backgroundImage: `url(${pictures[indexPicture]})` }}>
 			{pictures.length > 1 ? (
-				<div>
+				<>
 					<img
 						src={chevronLeft}
 						alt="chevron gauche"
@@ -38,7 +38,7 @@ function Slideshow({ pictures }) {
 							{indexPicture + 1}/{pictures.length}
 						</p>
 					</div>
-				</div>
+				</>
 			) : null}
 		</div>
 	);

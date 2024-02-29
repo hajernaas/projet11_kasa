@@ -1,25 +1,32 @@
 .error {
-    display: flex;
+    /*  display: flex;
+    align-items: center;*/
+    @include flex-align($align: center);
+
     flex-direction: column;
-    align-items: center;
-    gap: 113px;
+    // gap: 113px;
+    gap: $gap2;
 
     @media screen and (min-width: 1024px) {
-        gap: 139px;
+        //gap: 139px;
+        gap: $gap1;
     }
 
     &__title {
         font-size: $f-size-error-mobile;
         font-weight: $bold-font-weight;
+        @include dimension($width: 198px, $height: 99px);
         margin-top: 113px;
-        width: 198px;
-        height: 99px;
+
+        /*width: 198px;
+        height: 99px;*/
 
         @media screen and (min-width: 1024px) {
             font-size: $f-size-error-desktop;
             margin-top: 139px;
-            width: 597px;
-            height: 263px;
+            @include dimension($width: 597px, $height: 263px);
+            /* width: 597px;
+            height: 263px;*/
 
         }
     }

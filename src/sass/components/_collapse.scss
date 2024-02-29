@@ -2,7 +2,8 @@
     margin: 0 auto 20px;
     width: 100%;
     max-width: 1023px;
-    border-radius: 5px;
+    //  border-radius: 5px;
+    border-radius: $ter-radius;
 
 
     @media screen and (min-width: 768px) {
@@ -11,12 +12,15 @@
 
 
     &__title {
+        /* display: flex;
+        justify-content: space-between;*/
+        @include flex-justify($justify: space-between);
+
         height: 30px;
         padding: 8px;
-        display: flex;
         background-color: $color-primary;
-        border-radius: 5px;
-        justify-content: space-between;
+        //border-radius: 5px;
+        border-radius: $ter-radius;
         color: $color-secondary ;
         cursor: pointer;
 
@@ -79,7 +83,8 @@
         max-height: 0;
         position: relative;
         z-index: -1;
-        border-radius: 5px;
+        // border-radius: 5px;
+        border-radius: $ter-radius;
         background-color: $background-light;
         transition: 800ms ease-in-out;
         transform: translate(0, -5px);

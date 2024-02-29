@@ -6,12 +6,15 @@ import StarGray from "../assets/star_inactive.png";
 function Rating({ rating }) {
 	const ratingValueMax = 5;
 	return (
+		// Générer une séquence des étoiles en fonction de valeur de rating
 		<div className="rating">
+			{/*  créer des étoiles remplies avec la valeur de rating */}
 			{Array.from({ length: rating }, (e, index) => (
-				<img key={index} alt="Etoile pleine" src={starRed} />
+				<img key={`starRed-${index}`} alt="Etoile pleine" src={starRed} />
 			))}
+			{/*  créer des étoiles vides avec la valeur de ratingValueMax-rating */}
 			{Array.from({ length: ratingValueMax - rating }, (e, index) => (
-				<img key={index} alt="Etoile vide" src={StarGray} />
+				<img key={`starGrey-${index}`} alt="Etoile vide" src={StarGray} />
 			))}
 		</div>
 	);

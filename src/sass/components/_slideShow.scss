@@ -2,7 +2,8 @@
     height: 255px;
     position: relative;
     //  overflow: hidden;
-    border-radius: 10px;
+    // border-radius: 10px;
+    border-radius: $sec-radius;
     margin-bottom: 15px;
     background-position: center;
     background-size: cover;
@@ -15,16 +16,19 @@
     @media screen and (min-width: 1024px) {
 
         height: 415px;
-        border-radius: 25px;
+        // border-radius: 25px;
+        border-radius: $main-radius;
     }
 
 
     &__arrow {
         position: absolute;
-        transform: translateY(-50%);
         top: 50%;
+        transform: translateY(-50%);
+        @include dimension($width: 24px, $height: 24px);
+        /*
         width: 24px;
-        height: 24px;
+        height: 24px;*/
         cursor: pointer;
 
         &--left {
@@ -40,8 +44,9 @@
         }
 
         @media screen and (min-width: 1024px) {
-            width: 45px;
-            height: 79px;
+            @include dimension($width: 45px, $height: 79px);
+            /*width: 45px;
+            height: 79px;*/
         }
     }
 

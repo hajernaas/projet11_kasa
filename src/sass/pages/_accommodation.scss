@@ -3,7 +3,8 @@
 
     @media screen and (min-width:1024px) {
         display: flex;
-        gap: 76px;
+        //  gap: 76px;
+        gap: $gap3;
 
     }
 
@@ -14,8 +15,9 @@
 
     @media screen and (min-width: 768px) {
 
-        display: flex;
-        justify-content: space-between;
+        /*display: flex;
+        justify-content: space-between;*/
+        @include flex-justify($justify: space-between);
     }
 
     &__info {
@@ -55,22 +57,27 @@
             margin-bottom: 24px;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            //   gap: 10px;
+            gap: $gap7;
         }
 
         &--tag {
             padding: 2px 2px;
-            width: 84px;
-            height: 18px;
+            @include dimension ($width: 84px, $height: 18px);
+
+            /* width: 84px;
+            height: 18px;*/
             text-align: center;
             background-color: $color-primary;
-            color: white;
-            border-radius: 10px;
+            color: $color-secondary;
+            // border-radius: 10px;
+            border-radius: $sec-radius;
 
             @media screen and (min-width: 768px) {
                 padding: 4px 4px;
-                height: 22px;
-                width: 95px;
+                @include dimension($width: 95px, $height: 22px)
+                /*   height: 22px;
+                width: 95px;*/
             }
 
             @media screen and (min-width: 1024px) {
@@ -101,8 +108,9 @@
 
     &__profil {
         margin-bottom: 13px;
-        display: flex;
-        justify-content: space-between;
+        /* display: flex;
+        justify-content: space-between;*/
+        @include flex-justify($justify: space-between);
 
         @media screen and (min-width: 768px) {
             flex-direction: column-reverse;
@@ -119,14 +127,16 @@
         }
 
         &--host {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            /* display: flex;
+            align-items: center;*/
+            @include flex-align($align: center);
+            gap: $gap7;
+            // gap: 10px;
 
-            @media screen and (min-width: 1024px) {
-                display: flex;
-                align-items: center;
-            }
+
+
+
+
 
 
             &-name {
@@ -137,7 +147,7 @@
                     font-weight: $medium-font-weight;
 
                     @media screen and (min-width: 768px) {
-                        font-size: 18px;
+                        font-size: $f4-font-size;
                     }
 
 
@@ -149,22 +159,27 @@
 
             }
 
+
             &-picture {
-                width: 32px;
-                height: 32px;
+                /* width: 32px;
+                height: 32px;*/
+                @include dimension($width: 32px, $height: 32px);
                 overflow: hidden;
                 border-radius: 50%;
 
                 @media screen and (min-width: 768px) {
-                    width: 64px;
-                    height: 64px;
+                    /*width: 64px;
+                    height: 64px;*/
+                    @include dimension($width: 64px, $height: 64px);
+
                 }
 
 
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    /* width: 100%;
+                    height: 100%;*/
+                    @include full-WidhtHeight;
                     object-fit: cover;
                 }
             }
@@ -175,8 +190,4 @@
 
 
     }
-
-
-
-
 }

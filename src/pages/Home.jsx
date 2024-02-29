@@ -6,10 +6,10 @@ import ApartmentList from "../components/ApartmentList";
 function Home() {
 	return (
 		<main>
-			<section>
+			<>
 				<Banner />
 				<ApartmentList />
-			</section>
+			</>
 		</main>
 	);
 }

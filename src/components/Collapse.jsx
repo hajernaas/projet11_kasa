@@ -9,7 +9,7 @@ function Collapse({ title, text }) {
 	// sinon le text est affiché sous forme d'une chaine de caractéres dans la page A propos
 	function displayText() {
 		if (Array.isArray(text)) {
-			const equipments = text.map((elt) => <li key={`${elt}`}>{elt}</li>);
+			const equipments = text.map((elt, index) => <li key={`${elt}-${index}`}>{elt}</li>);
 			return <ul> {equipments} </ul>;
 		}
 		return <p>{text}</p>;

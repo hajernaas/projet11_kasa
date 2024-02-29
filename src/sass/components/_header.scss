@@ -2,9 +2,10 @@
 		//margin: 20px auto;
 		margin: 25px auto;
 		padding: 0 25px;
-		display: flex;
+		/*display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: center;*/
+		@include flex($justify: space-between, $align: center);
 		max-width: 1240px;
 		width: 100%;
 
@@ -52,12 +53,14 @@
 		}
 
 		.header-logo {
-			width: 145px;
-			height: 45px;
+			@include dimension($width: 145px, $height: 45px);
+			/*width: 145px;
+			height: 45px;*/
 
 			@media screen and (min-width: 1024px) {
-				width: 210px;
-				height: 68px;
+				/*	width: 210px;
+				height: 68px;*/
+				@include dimension($width: 210px, $height: 68px);
 			}
 
 		}

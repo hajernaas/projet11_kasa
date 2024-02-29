@@ -1,7 +1,9 @@
 .appartments {
     display: grid;
-    gap: 20px 30px;
-    border-radius: 25px;
+    // gap: 20px 30px;
+    gap: $gap6 $gap5;
+    // border-radius: 25px;
+    border-radius: $main-radius;
     margin-bottom: 30px;
 
 
@@ -26,11 +28,10 @@
 
     }
 
-
-
     @media screen and (min-width: 1024px) {
 
-        gap: 50px;
+        //  gap: 50px;
+        gap: $gap4;
         padding: 50px;
     }
 
