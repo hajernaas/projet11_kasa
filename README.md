@@ -1,3 +1,31 @@
+### Développez une application Web avec React et React Router
+
+Projet 11 de la formation "Développeur d'application - JavaScript React" par OpenClassrooms
+
+### Description:
+
+Kasa vous recrute en tant que développeur Front-end en freelance pour développer leur nouvelle plateforme web. Kasa est dans le métier de
+la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait
+partie des leaders de la location d’appartements entre particuliers en France.
+
+### Pièces jointes
+
+[Guide des étapes clés ](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P8+React+Kasa/Guide+d'etapes+cles+-+Creez+une+application+web+de+location+immobiliere+avec+React+1.pdf)
+
+[Maquette Figma](https://www.figma.com/file/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&node-id=0-1&mode=design&t=xUPwOAEMB3kQcKw2-0)
+
+[Prototype](https://www.figma.com/proto/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&node-id=3-0&t=x8RBKuR4UiE3hhBW-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=3%3A0)
+
+[Fichier JSON](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json)
+
+### Compétences visées
+
+- Développer les routes d'une application web avec React Router
+- Initialiser une application web avec un framework
+- Créer des composants avec React
+
+### Installation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
