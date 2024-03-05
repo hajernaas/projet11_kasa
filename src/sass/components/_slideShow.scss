@@ -1,8 +1,6 @@
 .carousel {
     height: 255px;
     position: relative;
-    //  overflow: hidden;
-    // border-radius: 10px;
     border-radius: $sec-radius;
     margin-bottom: 15px;
     background-position: center;
@@ -16,7 +14,6 @@
     @media screen and (min-width: 1024px) {
 
         height: 415px;
-        // border-radius: 25px;
         border-radius: $main-radius;
     }
 
@@ -26,9 +23,6 @@
         top: 50%;
         transform: translateY(-50%);
         @include dimension($width: 24px, $height: 24px);
-        /*
-        width: 24px;
-        height: 24px;*/
         cursor: pointer;
 
         &--left {
@@ -45,12 +39,12 @@
 
         @media screen and (min-width: 1024px) {
             @include dimension($width: 45px, $height: 79px);
-            /*width: 45px;
-            height: 79px;*/
+
         }
     }
 
     &__count {
+
         position: absolute;
         bottom: 5%;
         left: 50%;
@@ -59,15 +53,11 @@
 
         p {
 
-            //font-size: $f4-font-size;
-            //font-weight: $medium-font-weight;
-            // display: none;
             visibility: hidden;
 
             @media screen and (min-width: 1024px) {
                 font-size: $f4-font-size;
                 font-weight: $medium-font-weight;
-                //  display: inline;
                 visibility: visible
             }
 

@@ -1,14 +1,10 @@
 .error {
-    /*  display: flex;
-    align-items: center;*/
-    @include flex-align($align: center);
 
+    @include flex-align($align: center);
     flex-direction: column;
-    // gap: 113px;
     gap: $gap2;
 
     @media screen and (min-width: 1024px) {
-        //gap: 139px;
         gap: $gap1;
     }
 
@@ -18,15 +14,10 @@
         @include dimension($width: 198px, $height: 99px);
         margin-top: 113px;
 
-        /*width: 198px;
-        height: 99px;*/
-
         @media screen and (min-width: 1024px) {
             font-size: $f-size-error-desktop;
             margin-top: 139px;
             @include dimension($width: 597px, $height: 263px);
-            /* width: 597px;
-            height: 263px;*/
 
         }
     }

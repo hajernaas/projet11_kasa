@@ -4,6 +4,7 @@ import chevronLeft from "../assets/chevron_carousel_left.svg";
 import PropTypes from "prop-types";
 
 function Slideshow({ pictures }) {
+	
 	const [indexPicture, setIndexPicture] = useState(0);
 	//vérifier si l'image actuelle est la dernière
 	//si l'image était la dernière afficher la 1ère sinon la suivante

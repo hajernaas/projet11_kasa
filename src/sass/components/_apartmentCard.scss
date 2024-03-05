@@ -3,9 +3,6 @@
     position: relative;
     overflow: hidden;
     @include dimension($width: 100%, $height: 255px);
-    /*  height: 255px;
-    width: 100%;*/
-    //  border-radius: 10px;
     border-radius: $sec-radius;
     cursor: pointer;
 
@@ -14,11 +11,8 @@
     }
 
     &__image {
-        /*  height: 100%;
-        width: 100%;
-        */
         @include full-WidhtHeight;
-        object-fit: cover;
+        background-size: cover;
     }
 
     &__title {
@@ -33,15 +27,12 @@
     }
 
     &::after {
-        content: " ";
 
+        content: " ";
         position: absolute;
         top: 0;
         left: 0;
-        /* width: 100%;
-        height: 100%;*/
         @include full-WidhtHeight;
-
         background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
 
     }

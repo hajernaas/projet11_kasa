@@ -1,25 +1,8 @@
 .appartments {
     display: grid;
-    // gap: 20px 30px;
     gap: $gap6 $gap5;
-    // border-radius: 25px;
     border-radius: $main-radius;
     margin-bottom: 30px;
-
-
-    /*   @media screen and (min-width: 640px) {
-
-        grid-template-columns: 1fr 1fr;
-        background-color: $background-light;
-
-    }
-
-
-    @media screen and (min-width: 740px) {
-
-        padding: 30px;
-
-    }*/
 
     @media screen and (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -30,7 +13,7 @@
 
     @media screen and (min-width: 1024px) {
 
-        //  gap: 50px;
+
         gap: $gap4;
         padding: 50px;
     }

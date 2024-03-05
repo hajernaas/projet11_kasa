@@ -10,8 +10,7 @@ body {
     position: relative;
     min-width: 300px;
     color: $color-primary;
-    font-family: "Montserrat", sans-serif;
-    // font-weight: 500;
+    font-family: $font-family;
     margin: 0 auto;
     max-width: 1440px;
 
@@ -24,12 +23,11 @@ body {
     }
 
     #root {
-        /*display: flex;
-        justify-content: space-between;*/
+
         @include flex-justify($justify: space-between);
         flex-direction: column;
         min-height: 100vh;
-        //   max-width: 1440;
+
     }
 }
 

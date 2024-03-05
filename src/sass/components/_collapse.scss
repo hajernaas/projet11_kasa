@@ -2,9 +2,7 @@
     margin: 0 auto 20px;
     width: 100%;
     max-width: 1023px;
-    //  border-radius: 5px;
     border-radius: $ter-radius;
-
 
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
@@ -12,14 +10,11 @@
 
 
     &__title {
-        /* display: flex;
-        justify-content: space-between;*/
-        @include flex-justify($justify: space-between);
 
+        @include flex-justify($justify: space-between);
         height: 30px;
         padding: 8px;
         background-color: $color-primary;
-        //border-radius: 5px;
         border-radius: $ter-radius;
         color: $color-secondary ;
         cursor: pointer;
@@ -29,10 +24,6 @@
             padding: 10px 12px;
         }
 
-        /* @media screen and (min-width: 992px) {
-            height: 47px;
-            padding: 1px 12px;
-        }*/
 
         @media screen and (min-width: 1024px) {
             height: 47px;
@@ -62,12 +53,7 @@
                 font-size: $f4-font-size;
             }
 
-            /*   @media screen and (min-width: 992px) {
-                margin-top: 10px;
 
-                font-size: $f3-font-size;
-
-            }*/
 
             @media screen and (min-width: 1024px) {
                 margin-top: 10px;
@@ -83,24 +69,15 @@
         max-height: 0;
         position: relative;
         z-index: -1;
-        // border-radius: 5px;
         border-radius: $ter-radius;
         background-color: $background-light;
         transition: 800ms ease-in-out;
         transform: translate(0, -5px);
         overflow: hidden;
-        // transition: max-height 500ms;
-        // transform: translateY(-15px);
-        //transform: translateY(-15px);
         font-size: $f7-font-size;
         font-weight: $regular-font-weight;
         color: $color-tertiary;
         text-align: justify;
-        //height: 130px;
-
-
-
-
 
         &.visible {
             max-height: 300px;
@@ -116,15 +93,10 @@
                 margin-top: 25px;
             }
 
-            /* @media screen and (min-width: 992px) {
-                margin-top: 16px;
-            }*/
 
             @media screen and (min-width: 1024px) {
                 margin-top: 16px;
             }
-
-
 
         }
 
@@ -134,15 +106,12 @@
         }
 
         @media screen and (min-width: 768px) {
-            //  min-height: 0;
 
             font-size: $f4-font-size;
         }
 
         @media screen and (min-width: 1024px) {
-            // min-height: 0;
 
-            // height: 200px;
             font-size: $f4-font-size;
         }
 
