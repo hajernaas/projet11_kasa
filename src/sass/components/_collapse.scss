@@ -67,13 +67,14 @@
 
     &__text {
         max-height: 0;
+        overflow: hidden;
         position: relative;
         z-index: -1;
         border-radius: $ter-radius;
         background-color: $background-light;
         transition: 800ms ease-in-out;
         transform: translate(0, -5px);
-        overflow: hidden;
+
         font-size: $f7-font-size;
         font-weight: $regular-font-weight;
         color: $color-tertiary;
